@@ -45,7 +45,7 @@ function AqiData() {
     }, [aqiData]);
 
     const getAQI = () => {
-        const ws = new WebSocket('ws://city-ws.herokuapp.com');
+        const ws = new WebSocket('wss://city-ws.herokuapp.com');
         ws.onopen = () => {
             console.log('connected');
         };
